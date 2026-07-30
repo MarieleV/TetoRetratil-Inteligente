@@ -93,14 +93,14 @@ O projeto é baseado na arquitetura IoT (Sensoriamento, Processamento, Conectivi
 #### Diagrama de Contexto
 *Representa a interação entre o Usuário, o Ambiente Externo e o Sistema TRI.*
 
-`(Insira a imagem do diagrama de contexto aqui, ex: docs/diagrama_contexto.png)`
+docs/diagrama_contexto.svg
 
 <br/>
 
 #### Diagrama de Blocos (Hardware)
 *Visualização das conexões entre ESP32, Sensores e Motor.*
 
-`(Insira a imagem do diagrama de blocos aqui, ex: docs/diagrama_blocos.png)`
+docs/diagrama_blocos.svg
 
 <br/>
 

@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 650" width="100%" height="100%" style="font-family: Arial, sans-serif; background-color: #ffffff;">
+  <defs>
+    <!-- Arrowhead Definition -->
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#666666" />
+    </marker>
+    <!-- Shadow Filter -->
+    <filter id="shadow" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="2" dy="4" stdDeviation="3" flood-opacity="0.3" />
+    </filter>
+  </defs>
+
+  <!-- Title -->
+  <text x="400" y="40" font-size="20" font-weight="bold" text-anchor="middle" fill="#333333">Diagrama de Contexto C4 para o Sistema TRI</text>
+
+  <!-- USER (Person) -->
+  <circle cx="400" cy="90" r="25" fill="#08427b" />
+  <rect x="300" y="115" width="200" height="70" rx="10" fill="#08427b" filter="url(#shadow)" />
+  <text x="400" y="135" font-size="12" font-style="italic" fill="#ffffff" text-anchor="middle">«person»</text>
+  <text x="400" y="152" font-size="16" font-weight="bold" fill="#ffffff" text-anchor="middle">Usuário Residencial</text>
+  <text x="400" y="170" font-size="11" fill="#ffffff" text-anchor="middle">Morador que monitora/controla o teto</text>
+
+  <!-- APP (Container) -->
+  <rect x="275" y="260" width="250" height="80" rx="5" fill="#1168bd" filter="url(#shadow)" />
+  <text x="400" y="280" font-size="12" font-style="italic" fill="#ffffff" text-anchor="middle">«container»</text>
+  <text x="400" y="297" font-size="16" font-weight="bold" fill="#ffffff" text-anchor="middle">Aplicativo Móvel TRI</text>
+  <text x="400" y="317" font-size="11" fill="#ffffff" text-anchor="middle">Monitoramento e controle manual</text>
+
+  <!-- SYSTEM (System) -->
+  <rect x="225" y="420" width="350" height="90" rx="5" fill="#1168bd" filter="url(#shadow)" />
+  <text x="400" y="440" font-size="12" font-style="italic" fill="#ffffff" text-anchor="middle">«system»</text>
+  <text x="400" y="457" font-size="16" font-weight="bold" fill="#ffffff" text-anchor="middle">Sistema Teto Retrátil Inteligente (TRI)</text>
+  <text x="400" y="475" font-size="11" fill="#ffffff" text-anchor="middle">Hardware local que monitora o clima e move o teto.</text>
+  <text x="400" y="490" font-size="11" fill="#ffffff" text-anchor="middle">(ESP32 + Sensores + Atuadores)</text>
+
+  <!-- EXTERNAL ENVIRONMENT (External System) -->
+  <rect x="620" y="420" width="160" height="90" rx="5" fill="#999999" filter="url(#shadow)" />
+  <text x="700" y="440" font-size="12" font-style="italic" fill="#ffffff" text-anchor="middle">«external_system»</text>
+  <text x="700" y="457" font-size="14" font-weight="bold" fill="#ffffff" text-anchor="middle">Ambiente Externo</text>
+  <text x="700" y="475" font-size="11" fill="#ffffff" text-anchor="middle">Condições climáticas</text>
+  <text x="700" y="490" font-size="11" fill="#ffffff" text-anchor="middle">(Chuva, Temp, Umidade)</text>
+
+  <!-- MECHANISM (External System) -->
+  <rect x="325" y="580" width="150" height="50" rx="5" fill="#ffffff" stroke="#1168bd" stroke-width="2" filter="url(#shadow)" />
+  <text x="400" y="610" font-size="14" font-weight="bold" fill="#1168bd" text-anchor="middle">Mecanismo Retrátil</text>
+
+  <!-- CONNECTIONS -->
+  <!-- User to App -->
+  <line x1="400" y1="185" x2="400" y2="255" stroke="#666666" stroke-width="1.5" marker-end="url(#arrow)" />
+  <text x="410" y="225" font-size="11" fill="#666666">Usa</text>
+
+  <!-- App to System -->
+  <line x1="400" y1="340" x2="400" y2="415" stroke="#666666" stroke-width="1.5" marker-end="url(#arrow)" marker-start="url(#arrow)" />
+  <text x="410" y="375" font-size="11" fill="#666666">Comunica via MQTT/Wi-Fi</text>
+  
+  <!-- Environment to System -->
+  <line x1="620" y1="465" x2="580" y2="465" stroke="#666666" stroke-width="1.5" marker-end="url(#arrow)" />
+  <text x="598" y="455" font-size="11" fill="#666666" text-anchor="middle">Dados Físicos</text>
+
+  <!-- System to Mechanism -->
+  <line x1="400" y1="510" x2="400" y2="575" stroke="#666666" stroke-width="1.5" marker-end="url(#arrow)" />
+  <text x="410" y="545" font-size="11" fill="#666666">Abre/Fecha Teto</text>
+</svg>
