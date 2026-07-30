@@ -109,9 +109,9 @@ O projeto é baseado na arquitetura IoT (Sensoriamento, Processamento, Conectivi
 #### Interface do Aplicativo
 *O aplicativo permite login, visualização do clima e botões de ação (Abrir/Fechar).*
 
-![tela - 1](docs/iPhone 16 - 1.svg)
-![tela - 2](docs/iPhone 16 - 2.svg)
-![tela - 3](docs/iPhone 16 - 3.svg)
+![tela - 1](docs/tela1.svg)
+![tela - 2](docs/tela2.svg)
+![tela - 3](docs/tela3.svg)
 
 </div>
 
