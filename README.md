@@ -25,7 +25,7 @@
 
 <div align="center">
 
-### 🧭 Sumário
+### 📑 Sumário
 
 [Sobre o Projeto](#-sobre-o-projeto) • [Objetivos](#-objetivos) • [Funcionalidades](#-funcionalidades) • [Arquitetura e Hardware](#-arquitetura-e-hardware) • [Diagramas e Telas](#-diagramas-e-telas) • [Como Executar](#-como-executar) • [Equipe](#-equipe-de-desenvolvimento) • [Status](#-status-do-projeto)
 
@@ -91,27 +91,32 @@ O projeto é baseado na arquitetura IoT (Sensoriamento, Processamento, Conectivi
 <div align="center">
 
 #### Diagrama de Contexto
-*Representa a interação entre o Usuário, o Ambiente Externo e o Sistema TRI.*
 
 ![diagrama de contexto](docs/diagrama_contexto.svg)
 
+*Representa a interação entre o Usuário, o Ambiente Externo e o Sistema TRI.*
 
 <br/>
 
 #### Diagrama de Blocos (Hardware)
-*Visualização das conexões entre ESP32, Sensores e Motor.*
 
 ![diagrama de blocos](docs/diagrama_blocos.svg)
 
+*Visualização das conexões entre ESP32, Sensores e Motor.*
 
 <br/>
 
 #### Interface do Aplicativo
-*O aplicativo permite login, visualização do clima e botões de ação (Abrir/Fechar).*
 
-![tela - 1](docs/tela1.svg)
-![tela - 2](docs/tela2.svg)
-![tela - 3](docs/tela3.svg)
+<table>
+  <tr>
+    <td align="center"><img src="docs/tela1.svg" width="250"/></td>
+    <td align="center"><img src="docs/tela2.svg" width="250"/></td>
+    <td align="center"><img src="docs/tela3.svg" width="250"/></td>
+  </tr>
+</table>
+
+*O aplicativo permite login, visualização do clima e botões de ação (Abrir/Fechar).*
 
 </div>
 
@@ -140,6 +145,20 @@ const char* password = "SUA_SENHA";
 ```
 
 **4.** Realize o upload para a placa ESP32.
+
+## 👥 Equipe de Desenvolvimento
+
+<div align="center">
+
+| Integrante | Função |
+|:---:|---|
+| *Nome do integrante* | *Função no projeto* |
+| *Nome do integrante* | *Função no projeto* |
+| *Nome do integrante* | *Função no projeto* |
+
+</div>
+
+> Substitua pelos nomes e funções reais da equipe.
 
 ## 📌 Status do Projeto
 
