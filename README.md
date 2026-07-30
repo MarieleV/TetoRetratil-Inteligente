@@ -93,21 +93,25 @@ O projeto é baseado na arquitetura IoT (Sensoriamento, Processamento, Conectivi
 #### Diagrama de Contexto
 *Representa a interação entre o Usuário, o Ambiente Externo e o Sistema TRI.*
 
-docs/diagrama_contexto.svg
+![diagrama de contexto](docs/diagrama_contexto.svg)
+
 
 <br/>
 
 #### Diagrama de Blocos (Hardware)
 *Visualização das conexões entre ESP32, Sensores e Motor.*
 
-docs/diagrama_blocos.svg
+![diagrama de blocos](docs/diagrama_blocos.svg)
+
 
 <br/>
 
 #### Interface do Aplicativo
 *O aplicativo permite login, visualização do clima e botões de ação (Abrir/Fechar).*
 
-`(Insira capturas de tela do app aqui)`
+![tela - 1](docs/diagrama_blocos.svg)
+![tela - 2](docs/diagrama_blocos.svg)
+![tela - 3](docs/diagrama_blocos.svg)
 
 </div>
 
